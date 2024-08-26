@@ -56,7 +56,7 @@ const Carousel: React.FC = () => {
       data-carousel="static"
     >
       {/* Carousel wrapper */}
-      <div className="relative h-56 overflow-hidden rounded-lg md:h-[500px]">
+      <div className="relative h-48 sm:h-56 md:h-[500px] overflow-hidden rounded-lg">
         {images.map((image, index) => (
           <div
             key={index}
@@ -73,11 +73,15 @@ const Carousel: React.FC = () => {
               className="block w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white p-4">
-              <h2 className="text-2xl font-bold">{image.name}</h2>
-              <p className="text-center text-lg w-2/3">{image.description}</p>
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold">
+                {image.name}
+              </h2>
+              <p className="text-center text-sm sm:text-lg w-full sm:w-2/3">
+                {image.description}
+              </p>
               <a
                 href={image.link}
-                className="mt-4 bg-blue-600 px-4 py-2 rounded"
+                className="mt-4 bg-blue-600 px-4 py-2 rounded text-sm sm:text-base"
                 target="_blank"
                 rel="noopener noreferrer"
               >

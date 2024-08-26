@@ -2,7 +2,7 @@
 
 export default function AboutUs() {
   return (
-    <div id="sobre-nosotros" className="container mx-auto py-8">
+    <div id="sobre-nosotros" className="container mx-auto py-8 px-4 md:px-0">
       <h2 className="text-3xl font-bold mb-4">Sobre Nosotros</h2>
       <p className="text-lg leading-relaxed">
         Somos una organización sin fines de lucro comprometida con la misión de

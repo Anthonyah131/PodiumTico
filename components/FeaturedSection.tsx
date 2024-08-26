@@ -44,9 +44,9 @@ export default function FeaturedSection() {
   ];
 
   return (
-    <div id="destacados" className="container mx-auto py-8">
+    <div id="destacados" className="container mx-auto py-8 px-4 md:px-0">
       <h2 className="text-3xl font-bold mb-4 text-black">Destacados</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {athletes.map((athlete, index) => (
           <div
             key={index}
